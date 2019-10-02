@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.izyrtm.mapper.MdmMapper">
+	
+	<select id="mdmList" resultType="com.izyrtm.vo.MdmVO">
+			SELECT * FROM tb_dashboard order by reg_dt desc;
+	</select>
+	
+	<insert id="insertMdm" parameterType="com.izyrtm.vo.MdmVO">
+			INSERT INTO tb_dashboard (db_key, db_id, db_title, db_org_id, db_panel_id, bot_key, use_yn, reg_dt, mod_dt)
+			VALUES (#{db_key}, #{db_id}, #{db_title}, #{db_org_id}, #{db_panel_id}, #{bot_key}, #{use_yn}, now(), now());
+	</insert>
+	
+	<select id="mdmDetailList" parameterType="int" resultType="com.izyrtm.vo.MdmVO">
+			SELECT * FROM tb_dashboard where seq_no= #{seq_no};
+	</select>	
+	
+	
+	<update id="updateMdm" parameterType="com.izyrtm.vo.MdmVO">
+			update tb_dashboard
+			set
+				db_id = #{db_id},
+				db_title = #{db_title},
+				db_org_id = #{db_org_id},
+				db_panel_id = #{db_panel_id},
+				bot_key =  #{bot_key},
+				use_yn = #{use_yn},
+				mod_dt = now()
+			where
+				db_key = #{db_key};
+	</update>
+	
+	<delete id="deleteMdm" parameterType="int">
+			delete from tb_dashboard WHERE seq_no = #{seq_no};
+	</delete>
+	
+</mapper>

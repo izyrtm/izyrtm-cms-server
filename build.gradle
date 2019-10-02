@@ -1,0 +1,43 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.8.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+	id 'war'
+}
+
+group = 'com.test'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+//Spring
+	compile('org.springframework.boot:spring-boot-starter-web')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile("org.springframework.boot:spring-boot-starter-freemarker")
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '1.4.3.RELEASE'
+    
+	//jsp
+	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+	compile('javax.servlet:jstl:1.2')
+
+	//security
+	//compile("org.springframework.boot:spring-boot-starter-security")
+	//compile 'org.springframework.security:spring-security-web:4.1.2.RELEASE'
+	//compile 'org.springframework.security:spring-security-config:4.1.2.RELEASE'
+	//compile 'org.springframework.security:spring-security-taglibs:4.0.4.RELEASE'
+
+	//Database
+	compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+	compile('org.springframework:spring-jdbc')
+
+	//mybatis
+	compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.1.1'
+	compile group: 'org.mybatis', name: 'mybatis-typehandlers-jsr310', version: '1.0.1'
+
+	compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.0.4.RELEASE'
+
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.izyrtm.mapper.RtmMapper">
+	
+	<select id="rtmList" resultType="com.izyrtm.vo.RtmVO">
+			select a.*, b.code_value from tb_bot a,  tm_group_code b where a.bot_type = b.code_id order by reg_dt desc;
+	</select>
+	
+	<insert id="insertRtm" parameterType="com.izyrtm.vo.RtmVO">
+			INSERT INTO tb_bot (bot_key, bot_token, bot_type, bot_title, topic_name, user_list, use_yn, reg_dt, mod_dt)
+			VALUES (#{bot_key}, #{bot_token}, #{bot_type}, #{bot_title}, #{topic_name}, #{user_list}, #{use_yn}, now(), now());
+	</insert>
+	
+	<select id="rtmDetailList" parameterType="int" resultType="com.izyrtm.vo.RtmVO">
+			select a.*, b.code_value from tb_bot a,  tm_group_code b where a.bot_type = b.code_id and a.seq_no = #{seq_no};
+	</select>
+	
+	<update id="rtmUpdate" parameterType="com.izyrtm.vo.RtmVO">
+			update tb_bot
+			set
+				bot_token = #{bot_token},
+				bot_type = #{bot_type},
+				bot_title = #{bot_title},
+				topic_name = #{topic_name},
+				user_list =  #{user_list},
+				use_yn = #{use_yn},
+				mod_dt = now()
+			where
+				bot_key = #{bot_key};
+	</update>
+	
+	<delete id="rtmDelete" parameterType="int">
+			delete from tb_bot WHERE seq_no = #{seq_no};
+	</delete>
+	
+</mapper>
