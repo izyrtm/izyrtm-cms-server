@@ -5,6 +5,14 @@
   * [Go to CMS Web Site](http://localhost:8088/main)
   ![Main](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/cms-main.png)
 
+## Git
+  * [izyrtm-cms-server](https://github.com/izyrtm/izyrtm-cms-server)
+
+## Get the app
+
+you can [download an
+    APK](https://github.com/zulip/zulip-mobile/releases/latest)
+    from the official build we post on GitHub.
 
 ## Starter
  1. Monbot WebSite를 통해 USER Bot Token을 생성합니다.

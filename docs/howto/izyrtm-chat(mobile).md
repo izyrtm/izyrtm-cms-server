@@ -2,7 +2,17 @@
 
 izyrtm-chat(Mobile)는 chat 개설 및 등록된 RTM으로부터 자동으로 알림을 받을 수 있는 APP입니다. 
 
-## Starting
+## Git
+  * [izyrtm-mobile](https://github.com/izyrtm/izyrtm-mobile)
+
+## Get the app
+
+you can [download an
+    APK](https://github.com/zulip/zulip-mobile/releases/latest)
+    from the official build we post on GitHub.
+
+
+## Starter
   1. APK를 다운로드 받습니다. [download an
     APK](https://github.com/izyrtm/izyrtm-cms-server/releases)
     [!]
