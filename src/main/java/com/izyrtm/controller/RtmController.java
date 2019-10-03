@@ -192,8 +192,6 @@ public class RtmController {
 	@RequestMapping("/mdmList")
 	public MdmVO mdmListService(Model model, HttpServletRequest request) {
 		
-		System.out.println("mdmList 메뉴");
-		
 		MdmVO resultInfo = new MdmVO();		
 		model.addAttribute("list", rtmService.mdmListService());
 		
@@ -210,8 +208,6 @@ public class RtmController {
 		/* insert.jsp의 form name값을 받아온다 */
 		
 		String mode = request.getParameter("mode");
-		
-		System.out.println("변환 전 : " + mode);
 		
 		String db_key = request.getParameter("db_key");
 		String db_id = request.getParameter("db_id");
@@ -230,11 +226,8 @@ public class RtmController {
 		mdmVO.setBot_key(bot_key);
 		mdmVO.setUse_yn(use_yn);
 		
-		System.out.println("변환 후 : " + mode);
-		
 		if(mode.equals("U"))
 		{
-			System.out.println("updateMdmService");
 			rtmService.updateMdmService(mdmVO);
 		}
 		else if(mode.equals("I"))
@@ -273,8 +266,6 @@ public class RtmController {
 	// title list 조회
 	@RequestMapping(value =  "/list", method = RequestMethod.GET)
 	public MdmVO list(Model model, HttpServletRequest request) {
-		
-		System.out.println("mdmList 메뉴");
 		
 		MdmVO resultInfo = new MdmVO();		
 		model.addAttribute("list", rtmService.mdmListService());
