@@ -36,7 +36,7 @@ you can [download an
    - **Create stream을 통해 새로운 Stream을 생성**할 수 있으며, People to Add를 통하여 최초 참여자를 지정할 수 있습니다.
      ![Create Stream](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotWebsite/monbot-createstream.png)
 
- **##### sub stream**
+ **#####sub stream**
   1. 하나의 stream(channel)에 Sub Stream이 생성할 수 있으며 팀별 / 주제별 
      Stream을 생성 할 수 있습니다.
   
@@ -89,6 +89,6 @@ you can [download an
 ## How To Use for User
 User Bot Token과 Dashboard를 생성 후 연결하는 방법을 아래파일에서 확인 하실 수 있습니다.
  * [How to Use Mobile](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-chat(mobile).md)
- * [How to Use Website](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-cms(Website).md)
+ * [How to Use CMS Site](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-cms(Website).md)
  * [How to Use Monbot Site](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-server(Monbot).md)
  * [How to Use Dashboard](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-server(dashboard).md)
