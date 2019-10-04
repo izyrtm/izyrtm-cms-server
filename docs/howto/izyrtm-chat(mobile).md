@@ -15,7 +15,7 @@ you can [download an
 
 ## Starter
   1. APK를 다운로드 받습니다. [download an APK](https://github.com/izyrtm/izyrtm-mobile/releases) 
-     ![Welcome](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-welcome.png)
+   ![Welcome](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-welcome.png)
 
   2. 우리의 URL을 입력하여 chat에 입장합니다.
      Oraganication URL "https://monbot.org" --> Enter  
