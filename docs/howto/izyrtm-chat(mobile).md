@@ -1,10 +1,9 @@
 # How to Use Monbot Mobile APP
 
 izyrtm-chat(Mobile)는 chat 개설 및 등록된 RTM으로부터 자동으로 알림을 받을 수 있는 APP입니다. 
-  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app.png)
-  {: width="200" height="200"}
+  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app.png){:width="200" height="200"}
   
-  <img src="https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app.png" width="300" height="300">
+  <img src="https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app.png" width="100" height="400">
 
   ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.png) ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.png)
 
