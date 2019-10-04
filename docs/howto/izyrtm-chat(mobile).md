@@ -2,10 +2,10 @@
 
 izyrtm-chat(Mobile)는 chat 개설 및 등록된 RTM으로부터 자동으로 알림을 받을 수 있는 APP입니다. 
   ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app.png)
-  
-  <img src="https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app.png" width="200" height="300">
 
-  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.png) ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.png)
+  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.png) 
+  
+  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.png)
 
 ## Git
   * [izyrtm-mobile](https://github.com/izyrtm/izyrtm-mobile)
