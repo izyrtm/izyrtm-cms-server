@@ -73,8 +73,8 @@ you can [download an
 #### **APM Register**
   1. Grafana에서 생성한 모니터링 대쉬보드를 APP sub stream 상황창에서 실시간으로 받을 수 있도록 RTM과 연결 할 수 있습니다.
     ![Register](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/cms-apm-insert.png)
-    ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.JPG)
-    ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.JPG)
+     ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.png) 
+     ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.png)
 
  ##### 항목 설명
   - Dashboard Key : 사이트 내에서 관리할 ID를 입력하세요.

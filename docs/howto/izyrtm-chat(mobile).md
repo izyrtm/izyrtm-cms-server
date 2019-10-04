@@ -1,11 +1,9 @@
 # How to Use Monbot Mobile APP
 
 izyrtm-chat(Mobile)는 chat 개설 및 등록된 RTM으로부터 자동으로 알림을 받을 수 있는 APP입니다. 
-  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app.JPG)
+  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app.png)
 
-  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.JPG)
-
-  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.JPG)
+  ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.png) ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.png)
 
 ## Git
   * [izyrtm-mobile](https://github.com/izyrtm/izyrtm-mobile)
@@ -19,7 +17,7 @@ you can [download an
 ## Starter
   1. APK를 다운로드 받습니다. [download an
     APK](https://github.com/izyrtm/izyrtm-mobile/releases)
-    ![Welcome](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-welcome.JPG)
+    ![Welcome](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-welcome.png)
 
   2. 우리의 URL을 입력하여 chat에 입장합니다.
      Oraganication URL "https://monbot.org" --> Enter
@@ -56,10 +54,10 @@ you can [download an
      * [How to Use CMS Site](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-cms(Website).md)
 
   3. Sub Stream에서 **Monitering의 실시간 스크린 샷**을 받아 볼 수 있습니다.
-    ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.JPG)
+    ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.png)
 
   4. **Dashboard Monitering Site를 APP 내에서 실시간으로 확인 가능합니다.**
-    ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.JPG)
+    ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.png)
 
  #### All streams
   1. APP 내에서 Create new stream을 통해 새로운 stream을 만들 수 있습니다.

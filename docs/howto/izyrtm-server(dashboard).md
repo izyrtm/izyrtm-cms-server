@@ -6,7 +6,7 @@
 
 ![Dashboard](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/dashBoard/dashboard_main(afterSetting).png)
 
-![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.JPG)
+![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.png)
 
 
 ## Git
@@ -56,8 +56,8 @@ you can [download an
     ![Register](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/cms-apm-insert.png)
 
  3. 향후 izyrtm App의 Sub Stream에서 해당 스크린 샷을 받아 볼 수 있으며, **Site로 바로 이동 가능** 합니다.
-    ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.JPG)
-    ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.JPG)
+      ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-rtm.png) 
+      ![APP](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotApp/monbot-app-grafana.png)
 
 
 ## How To Use for User
