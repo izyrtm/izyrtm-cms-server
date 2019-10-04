@@ -1,3 +1,11 @@
+# izyrtm-cms-server
+
+[![List Register](hhttp://localhost:8088/rtmList)](http://localhost:8088/rtmInsert)
+[![Monbot chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://monbot.hopto.org/#)
+
+izyrtm CMS Server는 izyMessage에서 생성된 Token을 RTM과 연결하여 이상징후 발생 시, 등록된 대화창에 지정된 사용자들에게 알림기능을 제공합니다. 
+
+=======
 # How to Use Monbot Website
 
 Monbot Website는 APP에서 제공하는 기능들과 더불어 Stream을 관리할 수 있습니다.
@@ -92,4 +100,3 @@ User Bot Token과 Dashboard를 생성 후 연결하는 방법을 아래파일에
  * [How to Use CMS Site](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-cms(Website).md)
  * [How to Use Monbot Site](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-server(Monbot).md)
  * [How to Use Dashboard](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-server(dashboard).md)
->>>>>>> 10d0ee5de6e2c01adf294273baed4dfc14946713
