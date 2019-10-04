@@ -50,6 +50,13 @@
   4. 프로젝트 -> 우클릭 > Run As -> Spring Boot App
       ![View](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/develop-Runas.png)
   5. localhost:8080
+  
+ 
+## Build
+  /Users/lee-mac/Desktop/소스/eclipse/workspace/izyRtm/build/libs
+  file : izyRtm-0.0.1-SNAPSHOT.war
+  java -jar izyRtm-0.0.1-SNAPSHOT.war
+  
 
 
 
