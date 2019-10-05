@@ -44,7 +44,7 @@ you can [download an
   2. 미리 등록해 놓은 RTM을 BOT에 연결 시, "이상징후" / "문제알림" 과 같은 sub의 stream이 생겨납니다.
       ![sub Stream](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/image/monbotWebsite/monbot-substream.png)
 
-  3. sub stream 별로 이곳에서 [cms web](http://localhost:8088/main)  설정한 실시간 모니터링 화면 및 연결된 RTM에서 자동으로 방이 생성됩니다. 
+  3. sub stream 별로 이곳에서 [cms web](http://121.165.124.28:8088/main)  설정한 실시간 모니터링 화면 및 연결된 RTM에서 자동으로 방이 생성됩니다. 
      * [How to Create Connect RTM](https://github.com/izyrtm/izyrtm-cms-server/blob/master/docs/howto/izyrtm-cms(Website).md)
 
 

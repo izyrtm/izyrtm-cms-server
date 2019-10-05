@@ -16,7 +16,7 @@ izyrtm CMS Server는 izyMessage에서 생성된 Token을 RTM과 연결하여 이
 
 ### Register Monitering Dashboard
 
-* [Monitering Dashboard](http://localhost:8088/mdmInsert)
+* [Monitering Dashboard](http://121.165.124.28:8088/mdmInsert)
   Prometheus(프로메테우스) / Grafana에서 생성한 모니터링 대쉬보드를 등록된 RTM과 연결하여 채팅방에서 실시간으로 받아보실 수 있습니다.
 
 
