@@ -43,16 +43,6 @@
       </a>
 
       <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="/main">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-
-      <!-- Divider -->
       <hr class="sidebar-divider">
 
 
@@ -62,7 +52,7 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
           <span>Pages</span>
@@ -109,18 +99,31 @@
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        
+        
+          <p class="mb-4" style="margin-top:25px;">RTM Admin Site에서는 izyMessage에서 생성된 Token을 RTM / Dashboard와 연결하는 Admin 페이지입니다.</p> 
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
-          </button>
-
-    </div>
+          </button> 
+        </div>
     <!-- End of Content Wrapper -->
     
-
-  </div>
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800" style="margin-top:20px;">izyRtm</h1>
+          <p class="mb-4">APP과 Web을 통해서 실시간 Chat과 문제 알림 서비스를 받을 수 있습니다. 이곳에서 <a target="_blank" href="https://github.com/izyrtm/izyrtm-cms-server/blob/master/README.md"> 자세한 내용을 확인하세요</a>. [<a target="_blank" href="https://github.com/izyrtm/izyrtm-mobile/releases">APP 다운 받기</a> / <a target="_blank" href="https://monbot.hopto.org/"> Web 바로 가기</a>]</p>
+			<div class="form-label-group">
+				<label>* APP *</label>
+				<img src = "/resources/images/monbot-app-rtm.png" width = 200>
+				<label>* Web *</label>
+				<img src = "/resources/images/monbot-main.png" width = 730> 
+			</div>       
+  	</div>
   <!-- End of Page Wrapper -->
+  </div>
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">

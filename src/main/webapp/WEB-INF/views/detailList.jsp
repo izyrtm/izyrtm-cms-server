@@ -45,16 +45,6 @@
       </a>
 
       <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="/main">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-
-      <!-- Divider -->
       <hr class="sidebar-divider">
 
 
@@ -64,7 +54,7 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
           <span>Pages</span>
@@ -186,15 +176,7 @@
 				              <div class="form-label-group" style="margin-top:20px;">
 				              	<label class="section__edit-box--label">* Title</label>
 				              	<input type="text" id="bot_title" name="bot_title"  class="form-control" value="${item.bot_title}" required autofocus>
-				              </div>				              
-							  <div class="section__edit-box" style="margin-top:20px;">
-								<label class="section__edit-box--label">* RTM Type</label>
-					              	<div class="section__edit-box--info">
-									  <label class="edit--radio">
-									  <input type="radio" id="bot_type" name="bot_type" value="${item.bot_type}" checked/> ${item.code_value}
-									  </label>
-									</div>
-							  </div>				              
+				              </div>
 				              <div class="form-label-group" style="margin-top:20px;">
 				              	<label class="section__edit-box--label">* Topic Name</label>
 				              	<input type="text" id="topic_name" name="topic_name"  class="form-control" value="${item.topic_name}" required autofocus>
@@ -202,7 +184,17 @@
 				              <div class="form-label-group" style="margin-top:20px;">
 				              	<label class="section__edit-box--label">* Noti User</label>
 				              	<input type="text" id="user_list" name="user_list" class="form-control" value="${item.user_list}"required autofocus>
-				              </div>
+				              </div>				              
+							  <div class="section__edit-box" style="margin-top:20px;">
+								<label class="section__edit-box--label">* RTM Type</label>
+								<c:forEach var="code" items="${codeList}">
+					              	<div class="section__edit-box--info">
+									  <label class="edit--radio">
+									  <input type="radio" id="bot_type" name="bot_type" value="${code.code_id}" checked/> ${code.code_value}
+									  </label>
+									</div>
+							    </c:forEach>
+							  </div>				              
 				              <div class="form-label-group" style="margin-top:20px;">
 				              	<label class="section__edit-box--label">* 사용 여부</label>
 				              	<div class="section__edit-box--info">

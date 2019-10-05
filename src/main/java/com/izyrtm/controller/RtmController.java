@@ -47,13 +47,6 @@ public class RtmController {
 	public String sideBar() {
 		return "sideBar";
 	}
-
-	/*
-	@RequestMapping("/rtmInsert")
-	public String rtmInsert() {
-		return "rtmInsert";
-	}
-	*/
 	
 	// 공통 코드 조회 후 넘김
 	@RequestMapping("/rtmInsert")
@@ -70,11 +63,6 @@ public class RtmController {
 		return "main";
 	}
 	
-	
-	@RequestMapping("/mdmInsert")
-	public String mdmInsert() {
-		return "mdmInsert";
-	}
 	
 	@RequestMapping("/opensource")
 	public String opensource() {
@@ -114,14 +102,13 @@ public class RtmController {
 		
 		model.addAttribute("list", rtmService.rtmListService());
 		
-		
-		System.out.println("rtmList 메뉴");
 		System.out.println(rtmService.rtmListService());
 		
 		return "rtmList";
 		
 	}
 	
+	/*
 	// 1건 조회 
 	@RequestMapping("/detailList/{seq_no}")
 	public String rtmDetailList(@PathVariable int seq_no, Model model, HttpServletRequest request) {
@@ -148,6 +135,28 @@ public class RtmController {
 	
 		return "detailList";
 		// return mv;
+		
+	}
+	*/
+	
+	// 1건 조회 
+	@RequestMapping("/detailList/{seq_no}")
+	public ModelAndView rtmDetailList(@PathVariable int seq_no, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		
+		mv.setViewName("/detailList");
+		
+		List<RtmVO> detailList = rtmService.rtmDetailListService(seq_no);
+		List<CodeVO> cmnCode = cmnService.CodeListService();
+		
+		mv.addObject("detailList", detailList);
+		mv.addObject("codeList", cmnCode);
+		mv.addObject("seq_no", seq_no);
+		
+		// model.addAttribute("codeList", cmnCode);
+		
+		return mv;
 		
 	}
 	
@@ -275,6 +284,33 @@ public class RtmController {
 		resultInfo.setMdmListInfo("list", mdmList);
 		
 		return resultInfo;		
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/rtmListModal", method = RequestMethod.POST)
+	public ModelAndView rtmListModal(HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		
+		mv.setViewName("/rtmListModal");
+		
+		List<RtmVO> rtmList = rtmService.rtmListService();
+		
+		mv.addObject("rtmList", rtmList);
+		return mv;	
+		
+	}
+	
+	@RequestMapping("/mdmInsert")
+	public ModelAndView mdmInsert(HttpServletRequest request)  {
+		ModelAndView mv = new ModelAndView();
+		
+		mv.setViewName("/mdmInsert");
+		
+		List<RtmVO> rtmList = rtmService.rtmListService();
+		
+		mv.addObject("rtmList", rtmList);
+		return mv;	
 	}
 
 }

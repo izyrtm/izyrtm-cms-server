@@ -1,15 +1,12 @@
 # izyrtm-cms-server
 
-[![Main Register](http://localhost:8088/main)](http://localhost:8088/rtmInsert)
-[![Monbot chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://monbot.hopto.org/#)
-
 izyrtm CMS Server는 izyMessage에서 생성된 Token을 RTM과 연결하여 이상징후 발생 시, 등록된 대화창에 지정된 사용자들에게 알림기능을 제공합니다. 
 
 
 ## Get the WebSite
 ### Using the Token
 
-* [Monbot Chat](hhttps://monbot.hopto.org/#settings/your-bots)
+* [Monbot Chat](https://monbot.hopto.org/#settings/your-bots)
   에서 Your Bot을 만드세요.
 
 ### Register RTM
@@ -26,7 +23,7 @@ izyrtm CMS Server는 izyMessage에서 생성된 Token을 RTM과 연결하여 이
 ## Get the app
 
 you can [download an
-    APK](https://github.com/zulip/zulip-mobile/releases/latest)
+    APK](https://github.com/izyrtm/izyrtm-mobile/releases)
     from the official build we post on GitHub.
 
 

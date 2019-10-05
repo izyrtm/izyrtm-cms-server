@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<jsp:include page="/WEB-INF/views/rtmListModal.jsp" /> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,10 +28,8 @@
 </head>
 
 <body id="page-top">
-
   <!-- Page Wrapper -->
   <div id="wrapper">
-
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -43,16 +42,6 @@
       </a>
 
       <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="/main">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-
-      <!-- Divider -->
       <hr class="sidebar-divider">
 
 
@@ -62,7 +51,7 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
           <span>Pages</span>
@@ -108,7 +97,7 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"> </nav>
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -118,8 +107,8 @@
     </div>
     <!-- End of Content Wrapper -->
     
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
 
           <!-- Page Heading -->
           <h1 class="h3 mb-2 text-gray-800">Monitering Dashboard Mapping</h1>
@@ -158,9 +147,9 @@
 				              	<input type="text" id="db_panel_id" name="db_panel_id"  class="form-control" placeholder="panel id를 입력하세요." required autofocus>
 				              </div>
 				              <div class="form-label-group" style="margin-top:10px;">
-				              	<label class="section__edit-box--label">* RTM Key</label>
-				              	<input type="text" id="bot_key" name="bot_key" class="form-control" placeholder="연결할 RTM의 Key를 입력하세요." required autofocus>
-				              </div>
+				              	<label class="section__edit-box--label">* RTM Key <button id="btnSearchList" class="btn btn-sm btn-outline-secondary text-uppercase" type="button" >조회</button> </label> 
+				              	<input type="text" id="bot_key" name="bot_key" class="form-control" placeholder="연결할 RTM의 Key를 입력하세요." required autofocus>       	
+				              </div> 
 				              <div class="form-label-group" style="margin-top:10px;">
 				              	<label class="section__edit-box--label">* 사용 여부</label>
 				              	<div class="section__edit-box--info">
@@ -171,17 +160,17 @@
 								  <input type="radio" id="use_yn" name="use_yn" value="N"/>미사용
 								  </label>
 								</div>
-				              </div>  
-							  <!-- /. insert from -->	
+				              </div>
+							  <!-- /. insert from -->
 				              <button class="btn btn-md btn-primary text-uppercase" type="submit" style="margin-top:20px;">저장하기</button>
 				              <button class="btn btn-md btn-primary text-uppercase" type="button" onclick="location.href='/mdmList'" style="margin-top:20px;">취소</button>
-			          		</form> 
+			          		</form>          		
 			          </div>
 			        </div>
 			      </div>
 			    </div>
 			  </div>
-			  <!-- End of insert Table Wrapper -->       
+			  <!-- End of insert Table Wrapper -->  
         </div>
   </div>
   <!-- End of Page Wrapper -->
@@ -204,7 +193,15 @@
   <script src="/resources/vendor/datatables/jquery.dataTables.min.js"></script>
   <script src="/resources/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
+<script type="text/javascript"> 
 
+$(document).ready(function() {
+	$('#btnSearchList').click(function() {
+		//$("#dataTable").val(rtmList)
+		$("#myModal").modal();
+		});	
+	});	
+</script>
+</div>
 </body>
-
 </html>
