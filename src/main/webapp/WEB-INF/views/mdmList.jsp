@@ -113,7 +113,7 @@
 
           <!-- Page Heading -->
           <h1 class="h3 mb-2 text-gray-800">Monitering Dashboard Mapping</h1>
-          <p class="mb-4">Prometheus(프로메테우스) / Grafana에서 생성한 모니터링 대쉬보드를 RTM과 연결하여 상황창에서 실시간으로 받아보실 수 있습니다. 이곳에서 <a target="_blank" href="https://monbot.hopto.org/"> Dashboard를 구성하세요</a>. </p>
+          <p class="mb-4">Prometheus(프로메테우스) / Grafana에서 생성한 모니터링 대쉬보드를 RTM과 연결하여 상황창에서 실시간으로 받아보실 수 있습니다. 이곳에서 <a target="_blank" href="https://monbot.hopto.org:3000/login"> Dashboard를 구성하세요</a>. </p>
 
           <!-- table 큰 테두-->
           <div class="card shadow mb-4">
